@@ -3339,4 +3339,10 @@ client.on("guildMemberRemove", async (member) => {
   channel.send({ embeds: [farewellEmbed] });
 });
 
+if (!process.env.TOKEN) {
+  console.error("❌ TOKEN is missing from environment variables.");
+} else {
+  console.log("✅ TOKEN loaded (partial):", process.env.TOKEN.slice(0, 6), "...");
+}
+
 client.login(process.env.TOKEN);
