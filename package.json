@@ -1,0 +1,25 @@
+{
+  "name": "mu-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check src/bot.js && node --check src/events/lifecycle.js && node --check src/events/logging.js && node --check src/commands/muCommands.js"
+  },
+  "dependencies": {
+    "@distube/yt-dlp": "^2.0.1",
+    "@discordjs/rest": "^2.4.0",
+    "@snazzah/davey": "^0.1.9",
+    "better-sqlite3": "^12.2.0",
+    "discord-api-types": "^0.37.97",
+    "discord.js": "^14.25.1",
+    "distube": "^5.2.3",
+    "dotenv": "^17.3.1",
+    "ffmpeg-static": "^5.3.0",
+    "mathjs": "^14.5.3",
+    "node-fetch": "^2.7.0",
+    "opusscript": "^0.0.8",
+    "quick.db": "^9.1.7"
+  }
+}
